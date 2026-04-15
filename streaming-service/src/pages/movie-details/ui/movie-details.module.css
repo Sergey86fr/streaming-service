@@ -1,0 +1,33 @@
+/* .buttonBack {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+} */
+
+.movieDetailsWrapper {
+  padding: 20px;
+}
+
+.moviePoster {
+  width: 300px;
+  border: 2px solid #fff;
+}
+
+
+.sequelsTitle {
+  margin: 50px 0;
+}
+
+.sequelsWrapper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}

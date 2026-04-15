@@ -1,0 +1,101 @@
+.carouselContainer {
+    position: relative;
+  margin: 40px 0;
+  /* padding: 0 20px; */
+  width: 100%;
+ 
+}
+
+.carouselHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 5px;
+}
+
+.carouselTitle {
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.carouselTitle:hover {
+  /* color: #f0c420; */
+ color: var(--accent-hover);
+}
+
+.carouselNavigation {
+  display: flex;
+  gap: 10px;
+}
+
+.carouselButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+}
+
+.carouselButton:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.carouselButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carouselTrack {
+  display: flex;
+  /* gap: 20px; */
+  /* height: 300px; */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* padding: 10px 0; */
+  scrollbar-width: none; 
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 1400px;
+}
+
+.carouselTrack::-webkit-scrollbar { 
+  display: none; 
+  /* Chrome, Safari, Opera */
+ }
+
+/* .carouselProgress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.progressDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.progressDot:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+.progressDot.active {
+  background: #f0c420;
+  transform: scale(1.3);
+} */

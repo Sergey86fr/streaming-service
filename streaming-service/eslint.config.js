@@ -19,5 +19,8 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    // rules: {
+    //   'react/prop-types': 0,
+    // }
   },
 ])

@@ -1,0 +1,27 @@
+.arrowButton {
+  background: 
+  /* rgba(255, 255, 255, 0.1); */
+  var(--bg-tertiary);
+  border: 1px solid  var(--border-hover);
+   /* rgba(255, 255, 255, 0.2); */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.arrowButton:hover:not(:disabled) {
+  /* background: rgba(255, 255, 255, 0.2); */
+   background: var(--bg-secondary);
+  transform: scale(1.1);
+}
+
+.arrowButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

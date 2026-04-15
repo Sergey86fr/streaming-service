@@ -1,0 +1,25 @@
+/* .header {
+    /* background-color: var(--bg-primary); */
+/* } */ 
+
+.burgerMenu {
+    background-color: var(--btn-secondary-bg);
+    padding: 3px  3px 0 3px;
+    border-radius: 5px ;
+}
+
+.burgerMenuIcon {
+    color: var(--text-primary);
+}
+
+.favoritesLink {
+    color: var(--text-primary);
+}
+
+.authBtn {
+    color: var(--text-primary);
+    background-color: var(--btn-secondary-bg);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}

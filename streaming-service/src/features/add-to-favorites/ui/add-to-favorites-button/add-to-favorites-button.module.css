@@ -1,0 +1,18 @@
+.addToFavoritesButton {
+    padding: 5px;
+     background-color: var(--btn-secondary-bg);
+     /* border: 1px solid var( --border-color); */
+     border: none;
+}
+
+
+.addToFavoritesIcon {
+    /* background-color: var(--btn-secondary-bg); */
+    color: var(--btn-secondary-text);
+}
+
+.isFavorites {
+    background-color: var(--btn-primary-bg);
+     /* border: 1px solid var( --btn-primary-bg); */
+}
+

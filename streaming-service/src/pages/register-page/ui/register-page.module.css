@@ -1,0 +1,16 @@
+.registerPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000b8;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.registerPage form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

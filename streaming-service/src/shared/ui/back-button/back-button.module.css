@@ -1,0 +1,18 @@
+.buttonBack {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-hover);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.buttonBack:hover {
+   transform: scale(1.1);
+   background: var(--bg-secondary);
+}

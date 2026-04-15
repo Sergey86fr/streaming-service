@@ -1,0 +1,23 @@
+.skeletonBase {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+        );
+        background-size: 200% 100%;
+        animation: wave 2s infinite linear;
+        background-color: #f0f0f0;
+    }
+    
+    @keyframes wave {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
