@@ -1,0 +1,10 @@
+
+.logo {
+    color: var(--accent-primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.logoLink:hover .logo {
+    color: var(--accent-hover);
+    transform: scale(1.03);
+}

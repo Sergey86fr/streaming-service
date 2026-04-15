@@ -1,0 +1,104 @@
+:root ,
+  [data-theme="light"] {
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-tertiary: #e0e0e0;
+   
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --text-disabled: #bdbdbd;
+   
+    --accent-primary: #811515ff;
+    /* --accent-secondary: #4ecdc4; */
+    --accent-hover: #731212;
+   
+    --border-color: #212121;
+    --border-hover: #bdbdbd;
+   
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+     --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+     --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+   
+     --card-bg: #ffffff;
+     --card-hover: #fafafa;
+   
+     --btn-primary-bg: #811515ff;
+     --btn-primary-text: #ffffff;
+     --btn-secondary-bg: #e0e0e0;
+     --btn-secondary-text: #212121;
+   
+      --scrollbar-track: #f1f1f1;
+     --scrollbar-thumb: #c1c1c1;
+     --scrollbar-thumb-hover: #a8a8a8;
+  }
+
+
+  [data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2d2d2d;
+  
+  --text-primary: #ffffffb3;
+  --text-secondary: #b0b0b0;
+  --text-disabled: #6b6b6b;
+  
+  --accent-primary: #811515ff;
+  /* --accent-secondary: #4ecdc4; */
+  --accent-hover: #731212;
+  
+  --border-color: #5b5a5a;
+  --border-hover: #404040;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.3);
+  
+  --card-bg: #1e1e1e;
+  --card-hover: #2d2d2d;
+  
+  --btn-primary-bg: #811515ff;
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: #2d2d2d;
+  --btn-secondary-text: #ffffff;
+  
+  --scrollbar-track: #2d2d2d;
+  --scrollbar-thumb: #5a5a5a;
+  --scrollbar-thumb-hover: #6e6e6e;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Nunito Sans, Montserrat, sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}

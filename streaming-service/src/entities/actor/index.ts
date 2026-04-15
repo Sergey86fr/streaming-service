@@ -1,0 +1,1 @@
+export { ActorDetails } from "./ui/actor-details/actor-details"
