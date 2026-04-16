@@ -7,7 +7,11 @@ import cn from "classnames"
 import styles from "./theme-toggle.module.css"
 
 
-export const ThemeToggle = () => {
+interface IThemeToggleProps {
+  className?: string;
+}
+
+export const ThemeToggle = ({className} :IThemeToggleProps) => {
     const dispatch = useDispatch();
     const theme = useSelector((state:RootState) => state.theme.mode);
 
@@ -18,7 +22,7 @@ export const ThemeToggle = () => {
 
     return (
      <div 
-      className={cn(styles.themeToggle, {
+      className={cn(styles.themeToggle, className || '' , {
         [styles.dark]: theme === 'dark',
         // [styles.light]: theme === 'light',
       })}

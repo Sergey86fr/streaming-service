@@ -8,3 +8,10 @@
     color: var(--accent-hover);
     transform: scale(1.03);
 }
+
+@media (max-width: 767px) {
+  .logo {
+    transform: scale(0.6); 
+  } 
+   
+}

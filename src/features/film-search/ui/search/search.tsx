@@ -6,7 +6,12 @@ import { Dropdown } from "../../../../shared/ui";
 import cn from "classnames"
 import styles from "./search.module.css"
 
-export const Search = () => {
+
+interface ISearchProps {
+  className?: string;
+}
+
+export const Search = ({className}:ISearchProps) => {
 
   const[isOpenDropdown, setIsOpenDropdown] = useState(false)
   
@@ -34,7 +39,7 @@ export const Search = () => {
 
 
   return (
-    <div className={cn(styles.search)} ref={searchRef} >
+    <div className={cn(styles.search, className || '')} ref={searchRef} >
       <input className={cn(styles.inputSearch)} value={inputValue} onChange={handleInputSearch} placeholder="Введите название фильма ..."/>
       <div className={cn(styles.searchMenuBtn)} onClick={handleToggleDropdownSearchMenu}>
       <TbAdjustmentsHorizontal className={cn(styles.searchMenuIcon)} 

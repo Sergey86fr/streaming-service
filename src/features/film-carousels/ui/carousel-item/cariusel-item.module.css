@@ -1,0 +1,13 @@
+.item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+}
+
+@media (max-width: 767px) {
+    .item {
+        flex: 1 0 auto;
+        width: 95vw;
+        height: auto;
+    }
+}

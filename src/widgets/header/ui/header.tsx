@@ -37,20 +37,20 @@ setIsOpen(prev => !prev)
     return (
        <>
     
-      <div className={cn(styles.header)} style={{display:'flex', maxWidth:"1500px", alignItems:'center', justifyContent:"space-between", gap:30}}>
-        <div style={{display:'flex', gap:30, alignItems:'center'}}>
+      <div className={cn(styles.header)}>
+        <div className={cn(styles.leftGroup)}>
         <button  className={cn(styles.burgerMenu)} style={{ border:"none"}} onClick={handleDropdownToggle}>
           <Lineicons className={cn(styles.burgerMenuIcon)}  icon={MenuHamburger1Outlined}  />
           </button>
-        <Logo />
+        <Logo className={cn(styles.logo)} />
 
         </div>
-        <Search />
-        <div style={{display:'flex', gap:30}}>
+        <Search className={cn(styles.searchInput)} />
+        <div className={cn(styles.rightGroup)}>
 
         <Link className={cn(styles.favoritesLink)} to={isAuthenticated?'/favorites':'/auth/login'} >Избранное</Link>
         {/* {isAuthenticated ?<button onClick={handleClictToExit}>выйти</button>: null } */}
-        <ThemeToggle />
+        <ThemeToggle className={cn(styles.themeToggle)} />
         <button className={cn(styles.authBtn)} onClick={handleClictToExit}>{isAuthenticated? 'выйти':' войти'}</button>
         
         </div>
