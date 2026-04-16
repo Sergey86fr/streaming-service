@@ -8,3 +8,11 @@
   width: 100%;
   padding: 50px;
 }
+
+
+@media (max-width: 767px) {
+ .layout {
+   max-width: 100%;
+   padding: 10px;
+ }
+}

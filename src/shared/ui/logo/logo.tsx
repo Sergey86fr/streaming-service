@@ -4,10 +4,14 @@ import { Link } from "react-router-dom";
 import cn from "classnames"
 import styles from "./logo.module.css"
 
-export function Logo() {
+interface ILogoProps {
+  className?: string;
+}
+
+export function Logo({className} : ILogoProps) {
   return (
-    <Link className={cn(styles.logoLink)}  to={"/"}>
-    <Lineicons className={cn(styles.logo)}  icon={NetflixOutlined} size={150} />
+    <Link className={cn(styles.logoLink, className || '')}  to={"/"}>
+    <Lineicons className={cn(styles.logo)}  icon={NetflixOutlined} size={150}/>
     </Link>
   );
 }

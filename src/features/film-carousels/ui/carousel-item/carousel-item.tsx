@@ -1,13 +1,13 @@
 import type { CarouselItemProps } from "../../model/types";
+import styles from'./cariusel-item.module.css'
+import cn from "classnames"
 
 
 
 export const CarouselItem = ({ children, style }: CarouselItemProps) => {
   return (
-    <div style={{
-      flex: "0 0 auto", // Не сжимается и не растягивается
-      width: "200px",
-      height:"300px", // Фиксированная ширина для каждого элемента
+    <div className={cn(styles.item)} style={{
+
       ...style
     }}>
       {children}
